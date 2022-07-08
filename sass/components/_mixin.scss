@@ -10,16 +10,16 @@
 // test
 @mixin mobile {
   @media screen and (min-width: 480px) {
-    content: "";
+    @content;
   }
 }
 @mixin tablet {
   @media screen and (min-width: 768px) {
-    content: "";
+    @content;
   }
 }
 @mixin desktop {
   @media screen and (min-width: 1200px) {
-    content: "";
+    @content;
   }
 }

@@ -7,7 +7,7 @@
   color: var(--main-color);
   margin-bottom: 50px;
 }
-
+// test
 @mixin mobile {
   @media screen and (min-width: 480px) {
     content: "";

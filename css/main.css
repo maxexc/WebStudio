@@ -92,6 +92,7 @@ h1[class=visually-hidden] {
 
 .container {
   width: 100%;
+  min-width: 320px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;

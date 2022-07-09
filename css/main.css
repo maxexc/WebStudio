@@ -54,6 +54,13 @@ button:focus,
   outline: currentColor;
 }
 
+img {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  height: auto;
+}
+
 /* Переменные: цвета и прочее */
 :root {
   --main-color: #212121;
@@ -96,6 +103,11 @@ h1[class=visually-hidden] {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -243,6 +255,12 @@ h1[class=visually-hidden] {
   background-size: cover;
   margin: 0 auto;
 }
+@media screen and (min-width: 320px) {
+  .main {
+    max-width: 320px;
+    padding: 118px 0;
+  }
+}
 @media screen and (min-width: 480px) {
   .main {
     max-width: 480px;
@@ -299,21 +317,18 @@ h1[class=visually-hidden] {
 
 .description {
   display: flex;
+  flex-wrap: wrap;
+  gap: var(--typical-margin);
 }
 
 .description__li {
-  width: 270px;
-  margin-right: var(--typical-margin);
-}
-.description__li:last-child {
-  margin-right: 0;
+  width: 100%;
 }
 
 .details-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
   height: 120px;
   background: var(--description-background-color);
   border-radius: 4px;
@@ -328,6 +343,7 @@ h1[class=visually-hidden] {
   text-transform: uppercase;
   color: var(--main-color);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .details-box__text {

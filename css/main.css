@@ -927,17 +927,22 @@ h1[class=visually-hidden] {
   border-radius: 4px;
 }
 
-.portfolio-btn-list__item:not(:last-child) {
-  margin-right: 8px;
-}
-
 .portfolio-btn-list {
-  text-align: center;
-  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+  margin-bottom: 40px;
 }
-
-ul.portfolio-btn-list li {
-  display: inline-block;
+@media screen and (min-width: 768px) {
+  .portfolio-btn-list {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-btn-list {
+    margin-bottom: 50px;
+  }
 }
 
 /* Портфолио */
@@ -956,6 +961,8 @@ ul.portfolio-btn-list li {
 }
 
 .services__item {
+  display: flex;
+  flex-grow: 1;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -1020,6 +1027,7 @@ ul.portfolio-btn-list li {
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
+  flex-grow: 1;
 }
 
 .services__review {

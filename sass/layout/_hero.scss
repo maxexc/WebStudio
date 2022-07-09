@@ -12,10 +12,10 @@
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-  @include min-mobile {
-    max-width: 320px;
-    padding: 118px 0;
-  }
+  // @include min-mobile {
+  //   max-width: 320px;
+  //   padding: 118px 0;
+  // }
   @include mobile {
     max-width: 480px;
     padding: 118px 0;
@@ -37,13 +37,12 @@
   text-transform: uppercase;
   color: var(--main-tittle-color);
   margin: 0 auto;
-  // max-width: 696px;
   margin-bottom: 30px;
-  @include min-mobile {
-    max-width: 240px;
-    font-size: 17px;
-    line-height: 1.62;
-  }
+  // @include min-mobile {
+  //   max-width: 240px;
+  //   font-size: 17px;
+  //   line-height: 1.62;
+  // }
 
   @include mobile {
     max-width: 360px;

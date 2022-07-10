@@ -293,7 +293,7 @@ h1[class=visually-hidden] {
   fill: currentColor;
 }
 
-.menu-button {
+.menu-button-open {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -306,15 +306,15 @@ h1[class=visually-hidden] {
   transition: fill 250ms var(--timing-function);
 }
 @media screen and (min-width: 768px) {
-  .menu-button {
+  .menu-button-open {
     display: none;
   }
 }
 
-.menu-button:hover,
-.menu-button:focus,
-.mob-modal-btn:hover,
-.mob-modal-btn:focus {
+.menu-button-open:hover,
+.menu-button-open:focus,
+.menu-button-close:hover,
+.menu-button-close:focus {
   fill: var(--highlight-color);
 }
 
@@ -328,7 +328,7 @@ h1[class=visually-hidden] {
   padding-left: 25px;
 }
 
-.mob-modal-btn {
+.menu-button-close {
   position: absolute;
   top: 10px;
   right: 15px;

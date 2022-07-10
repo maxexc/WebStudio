@@ -151,7 +151,7 @@ h1[class=visually-hidden] {
 }
 @media screen and (min-width: 480px) {
   .header {
-    padding: 16px 0;
+    padding: 10px 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -166,7 +166,7 @@ h1[class=visually-hidden] {
   }
 }
 
-.header .container,
+.header > .container,
 .nav {
   display: flex;
   align-items: center;
@@ -300,6 +300,7 @@ h1[class=visually-hidden] {
   margin-left: auto;
   width: 40px;
   height: 40px;
+  padding: 0;
   border: none;
   background-color: inherit;
   transition: fill 250ms var(--timing-function);
@@ -311,8 +312,97 @@ h1[class=visually-hidden] {
 }
 
 .menu-button:hover,
-.menu-button:focus {
+.menu-button:focus,
+.mob-modal-btn:hover,
+.mob-modal-btn:focus {
   fill: var(--highlight-color);
+}
+
+.mob-modal {
+  position: fixed;
+  background-color: var(--footer-contact-color);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-left: 25px;
+}
+
+.mob-modal-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  transition: fill 250ms var(--timing-function);
+}
+
+.mob-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 48px;
+  margin-bottom: 302px;
+}
+
+.mob-menu__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+}
+
+.mob-menu__link {
+  position: relative;
+  transition: color 250ms var(--timing-function);
+}
+
+.mob-menu--stream {
+  color: var(--highlight-color);
+}
+
+.mob-menu__link:hover,
+.mob-menu__link:focus {
+  color: var(--highlight-color);
+}
+.mob-menu__link:hover::after,
+.mob-menu__link:focus::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--highlight-color);
+}
+
+.mob-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.mob-contacts__mobile {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  color: var(--highlight-color);
+}
+
+.mob-contacts__email {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: var(--header-link-color);
+  transition: color 250ms var(--timing-function);
+}
+
+.mob-contacts__email:hover {
+  color: var(--highlight-color);
 }
 
 /* main / hero */

@@ -309,40 +309,50 @@ h1[class=visually-hidden] {
     display: none;
   }
 }
-
-.menu-button-open:hover,
-.menu-button-open:focus,
-.menu-button-close:hover,
-.menu-button-close:focus {
+.menu-button-open:hover, .menu-button-open:focus {
   fill: var(--highlight-color);
 }
 
 .mob-modal {
   position: fixed;
   background-color: var(--footer-contact-color);
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding-left: 25px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.mob-modal__container {
+  max-width: 480px;
+  padding-left: 40px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  overflow: auto;
 }
 
 .menu-button-close {
   position: absolute;
   top: 10px;
   right: 15px;
+  margin: 0;
   padding: 0;
   border: none;
   background-color: inherit;
   transition: fill 250ms var(--timing-function);
+}
+.menu-button-close:hover, .menu-button-close:focus {
+  fill: var(--highlight-color);
 }
 
 .mob-menu {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-top: 48px;
-  margin-bottom: 302px;
 }
 
 .mob-menu__item {
@@ -350,6 +360,11 @@ h1[class=visually-hidden] {
   font-size: 40px;
   line-height: 1.175;
   letter-spacing: 0.02em;
+}
+@media screen and (max-width: 360px) {
+  .mob-menu__item {
+    font-size: 34px;
+  }
 }
 
 .mob-menu__link {
@@ -390,6 +405,11 @@ h1[class=visually-hidden] {
   letter-spacing: 0.02em;
   color: var(--highlight-color);
 }
+@media screen and (max-width: 360px) {
+  .mob-contacts__mobile {
+    font-size: 27px;
+  }
+}
 
 .mob-contacts__email {
   font-weight: 500;
@@ -407,11 +427,17 @@ h1[class=visually-hidden] {
 
 .mob-networks {
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .mob-networks__item {
   color: var(--highlight-color);
+  padding: 0 10px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mob-networks__item:first-child {
+  border-left: 0;
+  padding-left: 0;
 }
 
 /* main / hero */
@@ -1146,7 +1172,12 @@ h1[class=visually-hidden] {
 
 /* Портфолио */
 .section-portfolio {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .section-portfolio {
+    padding: 94px 0;
+  }
 }
 
 .services__img-portfolio {

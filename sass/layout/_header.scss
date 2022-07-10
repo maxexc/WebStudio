@@ -146,3 +146,24 @@
   margin-right: 10px;
   fill: currentColor;
 }
+
+// BUTTON FOR MENU MOBILE
+.menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: inherit;
+
+  transition: fill 250ms var(--timing-function);
+  @include tablet {
+    display: none;
+  }
+}
+.menu-button:hover,
+.menu-button:focus {
+  fill: var(--highlight-color);
+}

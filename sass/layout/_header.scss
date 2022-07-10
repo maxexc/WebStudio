@@ -41,10 +41,17 @@
 }
 .menu {
   display: none;
+  @include tablet {
+    display: flex;
+    align-items: center;
+  }
 }
 .nav__logo {
   color: #000000;
-  margin-right: 93px;
+  margin-right: 88px;
+  @include desktop {
+    margin-right: 93px;
+  }
 }
 
 .logo__first {

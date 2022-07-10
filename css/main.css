@@ -401,7 +401,17 @@ h1[class=visually-hidden] {
   transition: color 250ms var(--timing-function);
 }
 
-.mob-contacts__email:hover {
+.mob-contacts__email:hover,
+.mob-contacts__email:focus {
+  color: var(--highlight-color);
+}
+
+.mob-networks {
+  display: flex;
+  gap: 10px;
+}
+
+.mob-networks__item {
   color: var(--highlight-color);
 }
 

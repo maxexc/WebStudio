@@ -993,7 +993,6 @@ h1[class=visually-hidden] {
 }
 
 .mailing__input {
-  width: 358px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1003,6 +1002,21 @@ h1[class=visually-hidden] {
   color: var(--footer-contact-color);
   margin-bottom: 20px;
   transition: border-color 250ms var(--timing-function);
+}
+@media screen and (min-width: 320px) {
+  .mailing__input {
+    width: 310px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .mailing__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mailing__input {
+    width: 358px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .mailing__input {
@@ -1306,7 +1320,11 @@ h1[class=visually-hidden] {
 .services__item {
   display: flex;
   flex-grow: 1;
-  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .services__item {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .services__item {
@@ -1360,6 +1378,16 @@ h1[class=visually-hidden] {
   width: 100%;
   flex-direction: column;
   transition: box-shadow 250ms var(--timing-function);
+}
+@media screen and (min-width: 768px) {
+  .services__link:last-child {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services__link:last-child {
+    max-width: unset;
+  }
 }
 .services__link:hover, .services__link:focus {
   box-sizing: border-box;

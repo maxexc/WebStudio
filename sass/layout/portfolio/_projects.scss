@@ -19,7 +19,9 @@
 .services__item {
   display: flex;
   flex-grow: 1;
-  width: 100%;
+  @include mobile {
+    width: 100%;
+  }
   @include tablet {
     width: calc((100% - 30px) / 2);
   }
@@ -72,6 +74,16 @@
 .services__link {
   display: flex;
   width: 100%;
+  @include tablet {
+    &:last-child {
+      max-width: 354px;
+    }
+  }
+  @include desktop {
+    &:last-child {
+      max-width: unset;
+    }
+  }
   flex-direction: column;
 
   transition: box-shadow 250ms var(--timing-function);

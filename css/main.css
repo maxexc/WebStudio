@@ -1357,6 +1357,7 @@ h1[class=visually-hidden] {
 } */
 .services__link {
   display: flex;
+  width: 100%;
   flex-direction: column;
   transition: box-shadow 250ms var(--timing-function);
 }

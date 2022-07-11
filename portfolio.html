@@ -171,12 +171,35 @@
             <li class="services__item">
               <a href="" class="services__link">
                 <div class="services__item-wrap">
-                  <img
-                    src="./images/portfolio_services_1.jpg"
-                    alt="Technocarck"
-                    width="370"
-                    class="services__img-portfolio"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/Project1Desk1x.jpg 1x,
+                        ./images/projects/Project1Desk2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/Project1Tab1x.jpg 1x,
+                        ./images/projects/Project1Tab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/Project1Mob1x.jpg 1x,
+                        ./images/projects/Project1Mob2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/projects/Project1Mob2x.jpg"
+                      alt="Technocarck"
+                      width="450"
+                      class="services__img-portfolio"
+                    />
+                  </picture>
                   <p class="services__item-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить

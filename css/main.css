@@ -799,6 +799,36 @@ h1[class=visually-hidden] {
 
 .footer .container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .footer .container {
+    flex-direction: unset;
+    flex-wrap: wrap;
+    align-items: unset;
+    justify-content: unset;
+  }
+}
+
+.footer__box-address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__box-address {
+    margin-left: 61px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__box-address {
+    align-items: flex-start;
+    margin-left: 0;
+  }
 }
 
 .logo--footer {
@@ -812,6 +842,14 @@ h1[class=visually-hidden] {
 .contacts-footer {
   background: var(--footer-background-color);
   font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .contacts-footer {
+    align-items: flex-start;
+  }
 }
 
 .contacts-footer__item:not(:last-child) {
@@ -847,8 +885,28 @@ h1[class=visually-hidden] {
 
 /* --NEW-- */
 .footer-contacts {
-  margin-left: 70px;
-  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-contacts {
+    justify-content: unset;
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    align-items: flex-start;
+    justify-content: unset;
+    margin-top: 0;
+    margin-left: 70px;
+    padding-top: 12px;
+  }
 }
 
 .footer-invite {
@@ -893,9 +951,23 @@ h1[class=visually-hidden] {
 
 /* --- MAILING LIST FOOTER --- */
 .mailing-list {
-  margin-left: 93px;
-  margin-top: 12px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .mailing-list {
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mailing-list {
+    display: block;
+    margin-left: 93px;
+    margin-top: 12px;
+  }
 }
 
 .mailing-list__title {
@@ -910,6 +982,14 @@ h1[class=visually-hidden] {
 
 .mailing {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .mailing {
+    flex-direction: unset;
+  }
 }
 
 .mailing__input {
@@ -921,8 +1001,14 @@ h1[class=visually-hidden] {
   border-radius: 4px;
   padding-left: 16px;
   color: var(--footer-contact-color);
-  margin-right: 12px;
+  margin-bottom: 20px;
   transition: border-color 250ms var(--timing-function);
+}
+@media screen and (min-width: 1200px) {
+  .mailing__input {
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 }
 .mailing__input:hover, .mailing__input:focus {
   border-color: var(--highlight-color);

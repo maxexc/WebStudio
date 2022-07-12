@@ -47,7 +47,9 @@
 }
 .nav__logo {
   color: #000000;
-  margin-right: 88px;
+  @include tablet {
+    margin-right: 88px;
+  }
   @include desktop {
     margin-right: 93px;
   }

@@ -1045,6 +1045,11 @@ h1[class=visually-hidden] {
     margin-right: 12px;
   }
 }
+.mailing__input:hover + .mailing__label, .mailing__input:focus + .mailing__label, .mailing__input:not(:placeholder-shown) + .mailing__label {
+  top: -15%;
+  left: 0;
+  font-size: 12px;
+}
 .mailing__input:hover, .mailing__input:focus {
   border-color: var(--highlight-color);
 }
@@ -1058,15 +1063,8 @@ h1[class=visually-hidden] {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: greenyellow;
+  color: rgba(255, 255, 255, 0.6);
   transition: all 250ms var(--timing-function), font-size 250ms var(--timing-function);
-}
-
-.mailing__form:hover > .mailing__label,
-.mailing__input:placeholder-shown > .mailing__label {
-  top: -15%;
-  left: 0;
-  font-size: 12px;
 }
 
 .footer-btn {

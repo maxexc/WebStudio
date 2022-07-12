@@ -339,6 +339,10 @@ h1[class=visually-hidden] {
   overflow: auto;
 }
 
+.mob-menu__icon {
+  transition: transform 0.3s linear, fill 0.3s linear;
+}
+
 .menu-button-close {
   position: absolute;
   top: 10px;
@@ -346,11 +350,13 @@ h1[class=visually-hidden] {
   margin: 0;
   padding: 0;
   border: none;
-  background-color: inherit;
+  background-color: transparent;
+  fill: black;
   transition: fill 250ms var(--timing-function);
 }
-.menu-button-close:hover, .menu-button-close:focus {
+.menu-button-close:hover .mob-menu__icon, .menu-button-close:focus .mob-menu__icon {
   fill: var(--highlight-color);
+  transform: rotate(90deg);
 }
 
 .mob-menu {
@@ -1004,6 +1010,10 @@ h1[class=visually-hidden] {
   }
 }
 
+.mailing__form {
+  position: relative;
+}
+
 .mailing__input {
   height: 50px;
   background-color: transparent;
@@ -1012,7 +1022,6 @@ h1[class=visually-hidden] {
   border-radius: 4px;
   padding-left: 16px;
   color: var(--footer-contact-color);
-  margin-bottom: 20px;
   transition: border-color 250ms var(--timing-function);
 }
 @media screen and (min-width: 320px) {
@@ -1040,11 +1049,37 @@ h1[class=visually-hidden] {
   border-color: var(--highlight-color);
 }
 
+.mailing__label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: greenyellow;
+  transition: all 250ms var(--timing-function), font-size 250ms var(--timing-function);
+}
+
+.mailing__form:hover > .mailing__label,
+.mailing__input:placeholder-shown > .mailing__label {
+  top: -15%;
+  left: 0;
+  font-size: 12px;
+}
+
 .footer-btn {
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   fill: var(--footer-contact-color);
+}
+@media screen and (min-width: 1200px) {
+  .footer-btn {
+    margin-top: 0;
+  }
 }
 
 .footer-btn__icon {
@@ -1091,6 +1126,10 @@ h1[class=visually-hidden] {
   }
 }
 
+.modal-icon {
+  transition: transform 0.3s linear, fill 0.3s linear;
+}
+
 .modal-close-btn {
   position: absolute;
   top: 8px;
@@ -1105,6 +1144,7 @@ h1[class=visually-hidden] {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .modal-close-btn:hover .modal-icon {
+  transform: rotate(90deg);
   fill: var(--highlight-color);
 }
 

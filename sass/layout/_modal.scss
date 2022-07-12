@@ -41,6 +41,10 @@
 
   transition: 250ms var(--timing-function);
 }
+.modal-icon {
+  // fill: #000000;
+  transition: transform 0.3s linear, fill 0.3s linear;
+}
 .modal-close-btn {
   position: absolute;
   top: 8px;
@@ -53,7 +57,9 @@
   border-radius: 50%;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
   &:hover .modal-icon {
+    transform: rotate(90deg);
     fill: var(--highlight-color);
   }
 }

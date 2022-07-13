@@ -1406,7 +1406,7 @@ h1[class=visually-hidden] {
   background: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
   height: 110%;
-  /* Scroolbar */
+  /* Scrollbar */
   overflow: auto;
   transform: translateY(101%);
   transition: transform 250ms var(--timing-function);
@@ -1415,7 +1415,7 @@ h1[class=visually-hidden] {
   transform: translateY(0);
 }
 
-/* Scroolbar */
+/* Scrollbar */
 .services__item-text::-webkit-scrollbar {
   width: 5px;
 }

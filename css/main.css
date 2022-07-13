@@ -1405,7 +1405,7 @@ h1[class=visually-hidden] {
   color: var(--main-tittle-color);
   background: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
-  height: 101%;
+  height: 110%;
   /* Scroolbar */
   overflow: auto;
   transform: translateY(101%);
@@ -1429,7 +1429,7 @@ h1[class=visually-hidden] {
   outline: 1px solid slategrey;
 }
 
-/* ------ */
+/* ----- */
 .services__link {
   display: flex;
   width: 100%;

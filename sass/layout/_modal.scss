@@ -8,11 +8,20 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
 
+  // visibility: visible;
+  // overflow-y: scroll;
+  // z-index: 100;
+  // transform: scaleY(1);
+  // transition: all 0.4s ease;
+
   opacity: 1;
   transition: opacity 250ms var(--timing-function);
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
+
+    // visibility: hidden;
+    // transform: scaleY(0);
     & .modal {
       transform: translate(-50%, -50%) scale(0.5);
     }
@@ -42,7 +51,6 @@
   transition: 250ms var(--timing-function);
 }
 .modal-icon {
-  // fill: #000000;
   transition: transform 0.3s linear, fill 0.3s linear;
 }
 .modal-close-btn {

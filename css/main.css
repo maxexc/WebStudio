@@ -1140,7 +1140,7 @@ h1[class=visually-hidden] {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.modal-close-btn:hover .modal-icon {
+.modal-close-btn:hover .modal-icon, .modal-close-btn:focus .modal-icon {
   transform: rotate(90deg);
   fill: var(--highlight-color);
 }
@@ -1405,8 +1405,9 @@ h1[class=visually-hidden] {
   color: var(--main-tittle-color);
   background: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
-  height: 100%;
-  /* overflow: auto; */
+  height: 101%;
+  /* Scroolbar */
+  overflow: auto;
   transform: translateY(101%);
   transition: transform 250ms var(--timing-function);
 }
@@ -1415,16 +1416,20 @@ h1[class=visually-hidden] {
 }
 
 /* Scroolbar */
-/* .services__item-text::-webkit-scrollbar {
+.services__item-text::-webkit-scrollbar {
   width: 5px;
 }
+
 .services__item-text::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
+
 .services__item-text::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
-} */
+}
+
+/* ------ */
 .services__link {
   display: flex;
   width: 100%;

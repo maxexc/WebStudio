@@ -1107,7 +1107,7 @@ h1[class=visually-hidden] {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 450px;
+  max-width: 451px;
   width: 100%;
   min-height: 609px;
   background: var(--main-tittle-color);

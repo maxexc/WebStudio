@@ -241,3 +241,10 @@
 .footer-btn__icon {
   margin-left: 10px;
 }
+
+.footer-btn:hover .footer-btn__icon {
+  animation-name: flyPlane;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in;
+  animation-play-state: runnung;
+}

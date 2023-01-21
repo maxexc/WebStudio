@@ -1,0 +1,10 @@
+@keyframes flyPlane {
+    50% {
+      transform: translate(150%, -200%) rotate(-120deg) scale(0.8);
+      transform-origin: bottom left;
+    }
+    100% {
+      transform: translate(0%, 0%) rotate(-360deg);
+      transform-origin: top left;
+    }
+  }

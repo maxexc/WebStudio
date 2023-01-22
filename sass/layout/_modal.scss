@@ -68,7 +68,7 @@
 
   &:hover .modal-icon,
   &:focus .modal-icon {
-    transform: rotate(90deg);
+    transform: rotate(180deg);
     fill: var(--highlight-color);
   }
 }

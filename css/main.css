@@ -1384,6 +1384,7 @@ h1[class=visually-hidden] {
   display: flex;
   flex-wrap: wrap;
   gap: var(--typical-margin);
+  justify-content: center; /* Center the cards horizontally */
 }
 
 .services__item {
@@ -1398,11 +1399,13 @@ h1[class=visually-hidden] {
 @media screen and (min-width: 768px) {
   .services__item {
     width: calc((100% - 30px) / 2);
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .services__item {
     width: calc((100% - 60px) / 3);
+    max-width: 370px; /* Set max-width to ensure consistent width for each card */
   }
 }
 

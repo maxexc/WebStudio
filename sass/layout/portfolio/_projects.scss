@@ -15,6 +15,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--typical-margin);
+  justify-content: center;   /* Center the cards horizontally */
 }
 .services__item {
   display: flex;
@@ -24,9 +25,12 @@
   }
   @include tablet {
     width: calc((100% - 30px) / 2);
+    justify-content: center;
   }
   @include desktop {
     width: calc((100% - 60px) / 3);
+    justify-content: center;
+    max-width: 370px;  /* Set max-width to ensure consistent width for each card */
   }
 }
 @mixin font($fw: 700, $fs: 18px, $lh: 2, $ls: 0.06em) {

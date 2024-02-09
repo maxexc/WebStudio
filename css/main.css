@@ -1405,6 +1405,7 @@ h1[class=visually-hidden] {
 @media screen and (min-width: 1200px) {
   .services__item {
     width: calc((100% - 60px) / 3);
+    justify-content: center;
     max-width: 370px; /* Set max-width to ensure consistent width for each card */
   }
 }

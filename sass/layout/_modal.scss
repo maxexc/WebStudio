@@ -50,27 +50,35 @@
 
   transition: 250ms var(--timing-function);
 }
-.modal-icon {
-  transition: transform 0.3s linear, fill 0.3s linear;
-}
+
 .modal-close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
+
   display: flex;
   align-items: center;
-  // justify-content: center;
+  justify-content: center;
   width: 30px;
   height: 30px;
+  padding: 0;
+
+  color: var(--main-color);
   border-radius: 50%;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
-  &:hover .modal-icon,
-  &:focus .modal-icon {
-    transform: rotate(180deg);
-    fill: var(--highlight-color);
+  transition: transform 0.3s linear, color 0.3s linear, border-color 0.3s linear;
+
+  &:hover,
+  &:focus {
+    color: var(--highlight-color);
+    transform: rotate(270deg);
+    border-color: var(--highlight-color);
   }
+}
+.modal-icon {  
+  fill: currentColor;
 }
 
 .is-hidden {

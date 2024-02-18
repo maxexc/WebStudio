@@ -51,6 +51,7 @@
   transition: 250ms var(--timing-function);
 }
 .modal-icon {
+  z-index: 10;
   transition: transform 0.3s linear, fill 0.3s linear;
 }
 .modal-close-btn {

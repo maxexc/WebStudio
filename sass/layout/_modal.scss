@@ -51,13 +51,6 @@
   transition: 250ms var(--timing-function);
 }
 .modal-icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: black;
-  fill: black;
-  z-index: 10;
   transition: transform 0.3s linear, fill 0.3s linear;
 }
 .modal-close-btn {
@@ -66,7 +59,7 @@
   right: 8px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
   width: 30px;
   height: 30px;
   border-radius: 50%;
